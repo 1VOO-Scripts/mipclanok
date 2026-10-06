@@ -8,6 +8,7 @@
 \usepackage{graphicx}
 \usepackage{url}
 \usepackage{hyperref}
+\usepackage{wrapfig}
 
 \setlength{\parskip}{0.6em}
 \setlength{\parindent}{0pt}
@@ -38,6 +39,12 @@ POKLAD -- Pokladničný Asistent Detekcie
 \section*{VV-A1-09 Anotácia}
 
 Cieľom projektu je vyvinúť a~overiť asistenčný systém na rozpoznávanie neoznačeného ovocia, zeleniny a~pečiva pri samoobslužnej aj bežnej pokladni. Kamera bude snímať vyznačenú plochu váhy. Systém rozpozná vybrané druhy produktov a~prepojí ich s~databázou položiek, PLU kódov, cien a~spôsobov predaja. Údaj z~váhy pomôže spresniť rozpoznanie a~určiť účtované množstvo podľa spôsobu predaja.
+
+\begin{wrapfigure}[3]{R}{0.4\columnwidth}
+  \centering
+  \includegraphics[width=0.38\columnwidth]{fiit_nahlad.png}
+\end{wrapfigure}
+
 
 Projekt overí presnosť rozpoznávania pri rôznom osvetlení, uhloch pohľadu, počte kusov, čiastočnom zakrytí a~použití priesvitného vrecka. Porovná klasifikačný a~detekčný model. Zároveň vyhodnotí, či kombinácia obrazu a~údaja z~váhy zlepšuje výsledky. Systém bude rozlišovať prázdnu váhu, jeden produkt, viac produktov, priesvitné vrecko a~neznámy produkt. Pri viacerých druhoch naraz vyžiada oddelenie produktov, aby bolo možné správne priradiť hmotnosť. Ak produkt nebude dobre viditeľný, poradí, ako ho posunúť. Pri nízkej istote ponúkne najviac tri možné položky alebo vyžiada manuálny výber.
 
