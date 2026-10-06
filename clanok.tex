@@ -1,4 +1,4 @@
-\documentclass[10pt,a4paper]{article}
+\documentclass[10pt,a4paper,twocolumn ]{article}
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -58,8 +58,14 @@ The expected benefit is faster and more accurate item selection without searchin
 \end{otherlanguage}
 
 \begin{center}
-  \includegraphics[width=0.48\textwidth]{obrazok.png}\hfill
-  \includegraphics[height=0.48\textwidth]{graf.pdf}
+  \includegraphics[width=0.48\columnwidth]{obrazok.png}\hfill
+  \includegraphics[width=0.48\columnwidth]{graf.pdf}
 \end{center}
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=\textwidth]{obrazok2.png}
+  \caption{Diagram systému}
+\end{figure*}
 
 \end{document}
